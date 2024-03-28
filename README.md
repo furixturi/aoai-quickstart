@@ -1,0 +1,1 @@
+Following the official [quickstart guides](https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart?tabs=command-line%2Cpython-new&pivots=programming-language-studio)
