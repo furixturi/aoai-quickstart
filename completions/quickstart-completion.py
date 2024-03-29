@@ -14,11 +14,11 @@ client = AzureOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
 )
 
-deployment_name = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+model = os.getenv("AZURE_OPENAI_MODEL_GPT35_INSTRUCT")
 
 print("Sending a test completion job")
 start_phrase = "Write a tagline for an ice cream shop."
-response =client.completions.create(model=deployment_name, 
+response =client.completions.create(model=model, 
                                     prompt=start_phrase, 
                                     max_tokens=10)
 print(start_phrase+response.choices[0].text)
