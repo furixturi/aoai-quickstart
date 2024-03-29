@@ -9,9 +9,9 @@ import os
 from openai import AzureOpenAI
 
 client = AzureOpenAI(
-    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+    api_key=os.getenv("AZURE_OPENAI_API_KEY_EASTUS"),
     api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
-    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
+    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT_EASTUS")
 )
 
 model = os.getenv("AZURE_OPENAI_MODEL_GPT35_INSTRUCT")
